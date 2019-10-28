@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    background-image: url(image/23.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav #left,
+nav #right{
+    margin: 5px 15px;
+}
+nav #left ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav #left .logo{
+    width: 120px;
+    height: 35px;
+    margin-right: 30px;
+}
+nav #left .yun{
+    width: 60px;
+    height: 50px;
+}
+nav #right ul li,
+nav #left ul .l1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav #right ul li p,
+nav #left ul li p{
+    /* width: 150px; */
+    line-height: 30px;
+    color: #ffffff;
+    /* border: 1px solid rebeccapurple; */
+}
+
+nav #right ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav #right ul li .di{
+    width: 40px;
+    height: 40px;
+}
+nav #right ul li img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+main{
+    width: 100%;
+    display: flex;
+    margin: 60px auto;
+    flex-direction: column;
+    align-items: center;
+}
+main #content{
+    width: 350px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+main #content p{
+    cursor: pointer;
+}
+main #content .d1,
+main #content .d2,
+main #content .d3,
+main #content .d4,
+main #content .d5,
+main #content .d6,
+main #content .d7{
+    width: 300px;
+    margin: 20px auto;
+}
+
+main #content .d1 img{
+    width: 50px;
+    height: 40px;
+}
+main #content .d1{
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+}
+main #content .d2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main #content .d2 .p1{
+    color: #007dff;
+}
+/* main #content .d2 .p1:active .p2{
+    color: #000000;
+} */
+main #content .d3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main #content .d3 div input{
+    height: 30px;
+    width: 230px;
+    margin-top: 10px;
+}
+main #content .d4{
+    width: 300px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main #content .d4 button{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+   
+    background-color: #007dff;
+}
+main #content .d4 button:active{
+    background-color: #b4b4b6;
+}
+main #content .d5{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+main #content .d5 label{
+    font-size: 14px;
+    color: #b4b4b6;
+}
+main #content .d5 p{
+    font-size: 12px;
+    color: #007dff;
+}
+main #content .d6{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main #content .d6 p{
+    font-size: 12px;
+    color: #007dff;
+}
+main #content .d7{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main #content .d7 div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #b4b4b6;
+    
+}
+main #content .d7 img{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+main #content .d7 div:nth-child(1):hover{
+    background-color: #007dff;
+}
+main #content .d7 div:nth-child(2):hover{
+    background-color: #ca2a1e;
+}
+main #content .d7 div:nth-child(3):hover{
+    background-color: #15b12a;
+}
+footer{
+    width: 1300px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .footer-1,
+footer .footer-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .footer-1 a,
+footer .footer-2 a,
+footer .footer-2  p{
+    font-size: 14px;
+    color: #719dbe;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-left: 1px solid #719dbe;
+}
+footer .footer-2 img{
+    width: 20px;
+    height: 20px;
+}
+footer .footer-1 a:nth-child(1),
+footer .footer-2 p:nth-of-type(1){
+    border: none;
+}
+footer .footer-1 a:hover,
+footer .footer-2 a:hover{
+    color: #ffffff;
+}

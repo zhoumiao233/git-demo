@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#whole{
+    width: 100%;
+    height: 100%;
+}
+
+#header{
+    width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rgb(78, 72, 72); */
+}
+
+#d1{
+    width: 1200px;
+      margin: 40px 0 10px 0;
+      display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#header .header-2,#d2{
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header .header-2 a{
+     width: 120px;
+     height: 40px;
+     line-height: 40px;
+     font-size: 15px;
+     position: relative;
+     color: black;
+     text-align: center;
+     /* border: 1px solid red; */
+     text-decoration: none;
+}
+#header .header-2 .wo{
+    background-color: rgb(150, 148, 148);
+    border-radius: 10px;
+}
+#header .header-2 .wo:active{
+    background-color: rgb(185, 182, 182);
+}
+
+
+
+#header .header-2 a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+
+
+#header .header-2 a:after {
+    bottom: 0;
+    left: 0;
+    transition: border-bottom-color 0s ease-in 0.4s, width 0.2s ease-in 0.2s, height 0.2s ease-in;
+}
+
+
+#header .header-2 a:hover:after {
+    width: 100%;
+    height: 100%;
+    transition: border-color 0s ease-in 0.4s, width 0.2s ease-in 0.4s, height 0.3s ease-in 0.6s;
+    border-bottom-color: #ff5b00;
+}
+
+#d2 a{
+    width: 100px;
+     height: 40px;
+     line-height: 40px;
+     font-size: 13px;
+     text-align: center;
+    color: black;
+    /* border: 1px solid rgb(16, 9, 87); */
+    text-decoration: none;
+}
+#header a:hover{
+     color: #ff5b00;
+}
+
+#box img{
+    width: 100%;
+    height: 500px;
+    margin: 10px 0 10px 0;
+}
+
+#content{
+    width: 1500px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid rgb(43, 196, 119); */
+
+}
+#content-left,#content-right{
+    width: 700px;
+    height: 1000px;
+    display: flex;
+    flex-direction:column;
+    /* background-color: black; */
+    /* border: 1px solid rebeccapurple; */
+}
+.left{
+    background-color: black;
+}
+#content-left .sh{
+     width: 700px;
+     height: 704px;
+     margin:10px auto;
+     overflow: hidden;
+     position:relative;
+ }
+ #content-left .xx {
+    width: 700px;
+    height: 342px;
+    margin:20px auto;
+    position:relative;
+    overflow: hidden;
+ }
+ #content-left .sh img{
+     width: 750px;
+     height: 754px;
+     cursor: pointer;
+     z-index: 1;
+     opacity: 1;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(-40px, 0, 0);
+ }
+ #content-left .sh p{
+    width: 280px;
+    height: 30px;
+    left: 43px;
+    bottom: 15px;
+    font-size: 25px;
+    color: white;
+    position:absolute;
+    z-index: 2;
+    transform: translate3d(0, 0px, 0);
+    transition: opacity 0.2s, transform 0.35s;
+}
+#content-left .sh span{
+    letter-spacing: 1px;
+            transform: translate3d(0, 40px, 0);
+    color: rgb(231, 220, 220);
+            opacity: 0;
+            transition: opacity 0.2s, transform 0.35s;
+    width: 280px;
+    height: 117px;
+    left: 43px;
+    bottom: 0px;
+    font-size: 21px;
+    color: white;
+    position:absolute;
+    z-index: 2;
+}
+ #content-left .xx img{
+     width: 750px;
+     height: 392px;
+     cursor: pointer;
+     z-index: 1;
+     opacity: 1;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(-40px, 0, 0);
+ }
+ 
+ #content-left .xx p{
+    width: 280px;
+    height: 30px;
+    left: 43px;
+    bottom: 15px;
+    font-size: 25px;
+    color: white;
+    position:absolute;
+    z-index: 2;
+    transform: translate3d(0, 0px, 0);
+    transition: opacity 0.2s, transform 0.35s;
+}
+#content-left .xx span{
+    letter-spacing: 1px;
+            transform: translate3d(0, 40px, 0);
+    color: rgba(255, 255, 255, 0.6);
+            opacity: 0;
+            transition: opacity 0.2s, transform 0.35s;
+    width: 280px;
+    height: 117px;
+    left: 43px;
+    bottom: 0px;
+    font-size: 21px;
+    color: white;
+    position:absolute;
+    z-index: 2;
+}
+#content-left .left:hover p{
+            transform: translate3d(0, -160px, 0);
+}
+#content-left .left:hover span{
+    opacity: 1;
+    color: rgb(194, 185, 185);
+    transition-delay: 0.05s;
+    transition-duration: 0.35s;
+     transform: translate3d(0, -40px, 0);
+}
+#content-left .left:hover img{
+    opacity: 0.7;
+    transform: translate3d(0, 0, 0);
+}
+ #content-right .right{
+    width: 700px;
+    height: 342px;
+    margin:20px auto;
+    background-color: black;
+    position:relative;
+    overflow: hidden;
+ }
+ #content-right .right img{
+    width: 750px;
+    height: 392px;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(-40px, 0, 0);
+ }
+ #content-right .right p{
+    width: 280px;
+    height: 30px;
+    left: 43px;
+    bottom: 15px;
+    font-size: 25px;
+    color: white;
+    position:absolute;
+    z-index: 2;
+    transform: translate3d(0, 0px, 0);
+    transition: opacity 0.2s, transform 0.35s;
+}
+#content-right .right:hover p{
+            transform: translate3d(0, -160px, 0);
+}
+#content-right .right span{
+    color: rgb(194, 185, 185);
+    letter-spacing: 1px;
+    transform: translate3d(0, 40px, 0);
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.35s;
+    width: 280px;
+    height: 117px;
+    left: 43px;
+    bottom: 0px;
+    font-size: 21px;
+    color: white;
+    position:absolute;/*绝对定位*/
+    opacity: 0;
+    z-index: 2;
+}
+#content-right .right:hover span {
+    opacity: 1;/*透明度*/
+    transition-delay: 0.05s;/* 过渡效果开始前等待 */
+    transition-duration: 0.35s;/* 过渡效果持续时间 */
+     transform: translate3d(0, -40px, 0);/* 3d的y轴动画 */
+}
+#content-right .right:hover img{
+    opacity: 0.7;
+    transform: translate3d(0, 0, 0);
+}
+#bottom {
+    width: 1500px;
+    margin: 0px auto;
+}
+#bottom img{
+    width: 1500px;
+    height: 450px;
+}
+#footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(206, 202, 202);
+}
+#footer ul{
+    width: 1500px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    list-style: none;
+    line-height: 40px;
+}
+#footer ul a{
+    color: black;
+    text-decoration: none;
+}
+#footer ul a:hover,#footer ul span:hover{
+    color: gray;
+    cursor: pointer;
+}
